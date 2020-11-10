@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # The [Odin Project](https://www.theodinproject.com/) Web Dev 101 Keystone Project
 ## A JS-Powered Calculator
 
