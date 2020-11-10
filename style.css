@@ -1,0 +1,192 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(224,223,193);
+    background: linear-gradient(90deg, rgba(224,223,193,1) 0%, rgba(204,197,189,1) 35%, rgba(221,217,176,1) 100%);
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 10em);
+    grid-template-rows: 1fr repeat(5, 2em);
+    grid-gap: 1em;
+    grid-template-areas:
+        "display display display display"
+        "clear delete plusminus divide"
+        "seven eight nine multi"
+        "four five six minus"
+        "one two three plus"
+        "zer zer dec equals";
+    background-color: #e7eff9;
+    background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    -webkit-box-shadow: inset 0px 0px 58px -4px rgba(0,0,0,0.47);
+    -moz-box-shadow: inset 0px 0px 58px -4px rgba(0,0,0,0.47);
+    box-shadow: inset 0px 0px 58px -4px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+    box-shadow: 0px 0px 15px 5px #000000;
+    margin-top: 2em;
+}
+
+.btn {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 0.5em;
+    box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #2b2b2b;
+}
+
+.btn:hover {
+    -webkit-box-shadow: inset 0px 0px 58px -4px rgba(0,0,0,0.87);
+    -moz-box-shadow: inset 0px 0px 58px -4px rgba(0,0,0,0.87);
+    box-shadow: inset 0px 0px 58px -4px rgba(0,0,0,0.87);
+    cursor: pointer;
+}
+
+.nums {
+    background-color: #2b2b2b;
+    color: orange;
+}
+
+.operators {
+    background-color: lightcoral;
+}
+
+.funcs {
+    background-color: lightgoldenrodyellow;
+}
+
+.display {
+    grid-area: display;
+    background: rgb(22, 1, 1);
+    color: orange;
+    text-align: right;
+    font-size: 5em;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
+    border: .1rem solid black;
+    border-radius: .1em;
+    font-family: 'ZCOOL QingKe HuangYou', monospace;
+    height: 1.8em;
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(196,195,194,1);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(196,195,194,1);
+    box-shadow: 0px 0px 0px 5px rgba(196,195,194,1);
+    display: flex;
+    flex-direction: column;
+}
+
+.display p {
+    margin: 0;
+}
+
+.top-display {
+    text-align: left;
+    border-bottom: 1px solid orange;
+    padding-bottom: 0.1em;
+    height: 0.5em;
+}
+
+.bottom-display {
+    border-top: 1px solid orange;
+    font-size: 0.4em;
+    text-align: left;
+    padding-bottom: 0.1em;
+}
+
+.result {
+    display: flex;
+}
+
+#operator {
+    font-size: 0.4em;
+}
+
+#storedNum {
+    font-size: 0.4em;
+}
+
+.calc-label {
+    font-size: 8px;
+}
+
+.keyboard {
+    padding-top: 1em;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.plus-minus {
+    grid-area: plusminus;
+}
+
+.delete {
+    grid-area: delete;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.multiply {
+    grid-area: multi;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.subtract {
+    grid-area: minus;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.add {
+    grid-area: plus;
+}
+
+.zero {
+    grid-area: zer;
+}
+
+.decimal {
+    grid-area: dec;
+}
+
+.equals {
+    grid-area: equals;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A JS-Powered Web Calculator">
+        <title>TOP Keystone: Calculator</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="display">
+                <div class="top-display">
+                    <div class="calc-label">HISTORY</div>
+                    <p id="storedNum"></p>
+                </div>
+                <p id="currNum"></p>
+            </div>
+            <div class="keyboard"></div>
+            <button value="AC" class="clear btn funcs" id="clear">AC</button>
+            <button value="DEL" class="delete btn funcs" id="delete">DEL</button>
+            <button value="+/-" class="plus-minus btn funcs" id="plus-minus">+/-</button>
+            <button value="/" class="divide btn operators" id="divide">/</button>
+            <button value="7" class="seven btn nums" id="seven">7</button>
+            <button value="8" class="eight btn nums" id="eight">8</button>
+            <button value="9" class="nine btn nums" id="nine">9</button>
+            <button value="*" class="multiply btn operators" id="multiply">*</button>
+            <button value="4" class="four btn nums" id="four">4</button>
+            <button value="5" class="five btn nums" id="five">5</button>
+            <button value="6" class="six btn nums" id="six">6</button>
+            <button value="-" class="subtract btn operators" id="subtract">-</button>
+            <button value="1" class="one btn nums" id="one">1</button>
+            <button value="2" class="two btn nums" id="two">2</button>
+            <button value="3" class="three btn nums" id="three">3</button>
+            <button value="+" class="add btn operators" id="add">+</button>
+            <button value="0" class="zero btn nums" id="zero">0</button>
+            <button value="." class="decimal btn" id="decimal">.</button>
+            <button value="=" class="equals btn operators" id="equals">=</button>
+            </div>
+        </div>
+        <script src="calc3.js"></script>
+    </body>
+</html>
