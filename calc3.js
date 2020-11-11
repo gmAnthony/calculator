@@ -97,7 +97,7 @@ for (i = 0; i < operators.length; i++) {
             output = output == "" ? output : Number(output);
             history = history + output;
             if (e.target.value == "=") {
-                let result = eval(history);
+                let result = operate(history);
                 setCurrNum(result);
                 storeNum("");
             } else {
