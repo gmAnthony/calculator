@@ -22,4 +22,7 @@ Decimal and negative functionality adds to the currently displayed number.
 
 There is functionality for both clicking and key presses.
 
-The JS uses the `eval` method instead of making functions for adding, subtracting, etc. like TOP asks for. It seemed redudant to make a bunch of functions to evaluate an mathematical expression instead of just using the built in `eval` method. 
+Instead of using the `eval` method, which can be a security risk, I made an `operate` function which parses the mathematical expression from the calculator into an array of strings where math is performed in the proper order. Negative numbers are supported.
+
+### Opportunities
+The code could be made a lot cleaner. Instead of using big if/else statements I could use switches. I didn't use them in this case because I wasn't as comfortable with them, but understand they present an opportunity to produce more efficient and cleaner code. I could also compartmentalize code a bit more and provide smaller, more specific functions and have one larger function to call the smaller functions.
