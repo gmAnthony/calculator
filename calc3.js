@@ -1,3 +1,5 @@
+// To do: work with very large numbers. Parse numbers that include "e"
+
 // Set constants for quicker referencing
 const storedNumber = document.getElementById('storedNum');
 const currNumber = document.getElementById('currNum');
@@ -28,7 +30,9 @@ function setCurrNum(num) {
     if (num == "") {
         currNumber.innerText = num;
     } else if (num > 999999999999999) {
-        currNumber.innerText = 999999999999999;
+        currNumber.innerText = 999999999999999
+    } else if (num < -999999999999999) {
+        currNumber.innerText = -999999999999999
     } else {
         currNumber.innerText = num;
     }
@@ -183,7 +187,11 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-    return getFormattedNumber(a) / getFormattedNumber(b);
+    if (b == 0) {
+        alert("You can't divide by zero, you silly goose.")
+    } else {
+        return getFormattedNumber(a) / getFormattedNumber(b);
+    }
 }
 
 function operate(eq) {
@@ -202,7 +210,7 @@ function operate(eq) {
     if (result[1] == "-") {
         result.shift();
         result.splice(0,2,result[0] + result[1])
-    }
+    } 
     for (x = 0; x < operators.length; x++) {
         if (operators[x].length > 1) {
             let ix = result.indexOf(operators[x]);
