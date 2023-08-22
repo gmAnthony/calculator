@@ -1,9 +1,7 @@
----
-permalink: /index.html
----
-
 # The [Odin Project](https://www.theodinproject.com/) Web Dev 101 Keystone Project
 ## A JS-Powered Calculator
+
+Deployed at [gmanthony.github.io/calculator](https://gmanthony.github.io/calculator/)
 
 ### HTML
 The HTML structure is very simple. I created a overall container to apply broad styles to and then two smaller divs, `display` and `keyboard`. The display contains the numerical display of the calculator and the keyboard contains the keys. Each key is a button with a `value` attribute.
